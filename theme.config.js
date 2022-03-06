@@ -1,12 +1,14 @@
 export default {
-  github: 'https://github.com/shuding/nextra',
-  docsRepositoryBase: 'https://github.com/shuding/nextra/blob/master',
-  titleSuffix: ' – Nextra',
+  github: 'https://github.com/Prototypr/dev-docs',
+  docsRepositoryBase: 'https://github.com/Prototypr/dev-docs/blob/main',
+  titleSuffix: ' – Prototypr',
+  defaultMenuCollapsed:false,
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      {/* <span className="mr-2 font-extrabold hidden md:inline">Prototypr</span> */}
+      <img style={{width:'120px'}} className="mr-2" alt="Prototypr.io Logotext" src="https://letter-so.s3.us-west-1.amazonaws.com/uploads/LQatPZxS8qFXER9Hi/2rzv1a"/>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        Grant For The Web Project
       </span>
     </>
   ),
@@ -16,15 +18,16 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Nextra: the Next.js site builder" />
-      <meta name="og:description" content="Nextra: the Next.js site builder" />
+      <meta name="description" content="Prototypr team docs" />
+      <meta name="monetization" content="$ilp.uphold.com/KFf2ZdYLXnj9"></meta>
+      <meta name="og:description" content="Prototypr team docs" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="twitter:site:domain" content="nextra.vercel.app" />
-      <meta name="twitter:url" content="https://nextra.vercel.app" />
+      <meta name="twitter:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
+      <meta name="twitter:site:domain" content="prototypr.io" />
+      <meta name="twitter:url" content="https://prototypr.io" />
       <meta name="og:title" content="Nextra: Next.js static site generator" />
-      <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="og:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
+      <meta name="apple-mobile-web-app-title" content="Prototypr" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -62,6 +65,6 @@ export default {
   nextLinks: true,
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
-  footerText: <>MIT {new Date().getFullYear()} © Nextra.</>,
+  footerText: <>MIT {new Date().getFullYear()} © Prototypr.</>,
   unstable_faviconGlyph: '👋',
 }
