@@ -1,4 +1,4 @@
-# NextJS Frontend
+# Frontend NextJS app
 
 The Frontend of Prototypr is a [NextJS](https://nextjs.org/) app, reading from a [headless CMS backend: Strapi](./strapi). This section will show you how it was set up from the NextJS Starter boilerplate. 
 
@@ -10,7 +10,7 @@ Rather than reinventing the wheel, we're starting from the [NextJS Strapi boiler
 * [Progressive rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) set up on pages
 * `/lib` folder with GraphQL examples of reading data from [Strapi backend](/strapi)
 
-## Get started
+## Getting started
 
 Using the command shown in the [Next Repository](https://github.com/vercel/next.js/tree/canary/examples/cms-strapi), we can quickly bootstrap the app into a `prototypr-frontend` folder:
 
@@ -32,7 +32,7 @@ STRAPI_PREVIEW_SECRET can be any random string (but avoid spaces), like MY_SECRE
 NEXT_PUBLIC_STRAPI_API_URL should be set as http://localhost:1337 (no trailing slash).
 ```
 
-## Update Strapi Queries (v3 to v4)
+## Update Strapi Queries
 
 After running the app, you'll see there's an issue with the graphQL queries as they fail. This is because the format of queries has changed from Strapi v3 to v4. For example:
 * the `where` input is no longer valid - it is replaced with a `filter` operator. 

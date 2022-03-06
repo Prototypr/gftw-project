@@ -1,4 +1,4 @@
-# Strapi Backend
+# Backend Strapi CMS
 
 Strapi is an Open Source headless CMS that acts as the backend of the Prototypr app.
 
@@ -13,7 +13,7 @@ Learn more about headless CMS:
 
 > A headless CMS is any type of back-end content management system where the content repository “body” is separated or decoupled from the presentation layer “head.” Content that is housed in a headless CMS is delivered via APIs for seamless display across different devices.
 
-## Installing Strapi Locally
+## Installation
 
 The [Strapi installation instructions are here](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/installation/cli.html#installing-from-cli), but below are the steps we took when installing Strapi for Prototypr:
 
@@ -60,7 +60,7 @@ You can start by doing:
 From here, set up your username and password for local use. Next we need to set up the content types and components for the CMS.
 
 
-## Set up Content Types
+## Content Types
 
 At this point, you should be able to log into the Strapi dashboard, but it looks empty, like this:
 
@@ -111,7 +111,7 @@ Therefore we will have 1 collection type, called **posts**, and a `post-types` c
 * [tags](https://github.com/GraemeFulton/prototypr-backend-old/blob/master/api/toolbox-tags/models/toolbox-tags.settings.json)
 
 
-## Creating the Content Model
+## Content Model
 
 As outlined above, instead of having many different collection types for each type of post (article, newsletter, news, inspiration), they can all fit into a common 'Post' collection since they all share similar properties.
 
@@ -122,9 +122,9 @@ This will keep the Strapi dashboard simpler and easier to navigate. To distingui
 Next, an `author` and `tags` collection are added, a bit like this [Strapi tutorial on creating a CSS Tricks clone](https://strapi.io/blog/building-a-css-tricks-website-clone-with-strapi-next-js). 
 
 
-## Migrating Content from WordPress
+## WordPress Migration
 
-In our Strapi repository, there's a folder called `/wordpress-migration`, which has a `README.md` on how to migrate our content from Wordpress. It reads content from different post types using the WP-GraphQL endpoints, and inserts them into Strapi with a Post request. The outcome looks like this:
+We have a separater repository, called `wordpress-strapi-migration`, which has a `README.md` on how to migrate our content from Wordpress. It reads content from different post types using the WP-GraphQL endpoints, and inserts them into Strapi with a Post request. The outcome looks like this:
 
 ![Strapi dashboard showing posts that can be filtered by types such as article or tool](/strapi-dashboard-posts.png)
 
