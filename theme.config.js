@@ -1,6 +1,6 @@
 export default {
-  github: 'https://github.com/GraemeFulton/prototypr-team',
-  docsRepositoryBase: 'https://github.com/GraemeFulton/prototypr-team/blob/master',
+  github: 'https://github.com/Prototypr/gftw-project',
+  docsRepositoryBase: 'https://github.com/Prototypr/gftw-project/blob/master',
   titleSuffix: ' – Prototypr',
   defaultMenuCollapsed:true,
   logo: (
