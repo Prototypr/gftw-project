@@ -1,5 +1,7 @@
 # Prototypr Grant for The Web Project Docs
 
+👉 [See live docs](prototypr-gftw.vercel.app) 
+
 This is an open source, live documention on the development of the Prototypr Grant for The Web Project: ["Democratising Design Education with a Web Monetized Publishing Platform"](https://prototypr.io/post/announcing-prototypr-grant-for-the-web-flagship-project-%f0%9f%8e%89/). 
 
 <a target="_blank" href="https://prototypr.io/post/announcing-prototypr-grant-for-the-web-flagship-project-%f0%9f%8e%89/">![Prototypr + Grant for the web banner - abstract background with logos for Grant for The Web and Prototypr](https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242)</a>
