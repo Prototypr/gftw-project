@@ -1,8 +1,8 @@
 export default {
-  github: 'https://github.com/Prototypr/dev-docs',
-  docsRepositoryBase: 'https://github.com/Prototypr/dev-docs/blob/main',
+  github: 'https://github.com/GraemeFulton/prototypr-team',
+  docsRepositoryBase: 'https://github.com/GraemeFulton/prototypr-team/blob/master',
   titleSuffix: ' – Prototypr',
-  defaultMenuCollapsed:false,
+  defaultMenuCollapsed:true,
   logo: (
     <>
       {/* <span className="mr-2 font-extrabold hidden md:inline">Prototypr</span> */}
@@ -19,7 +19,6 @@ export default {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="description" content="Prototypr team docs" />
-      <meta name="monetization" content="$ilp.uphold.com/KFf2ZdYLXnj9"></meta>
       <meta name="og:description" content="Prototypr team docs" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
