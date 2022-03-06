@@ -18,6 +18,7 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
+      <meta name="monetization" content="$ilp.uphold.com/KFf2ZdYLXnj9"></meta>
       <meta name="description" content="Prototypr team docs" />
       <meta name="og:description" content="Prototypr team docs" />
       <meta name="twitter:card" content="summary_large_image" />
