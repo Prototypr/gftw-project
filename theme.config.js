@@ -25,7 +25,7 @@ export default {
       <meta name="twitter:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
       <meta name="twitter:site:domain" content="prototypr.io" />
       <meta name="twitter:url" content="https://prototypr.io" />
-      <meta name="og:title" content="Nextra: Next.js static site generator" />
+      <meta name="og:title" content="Prototypr Grant for the Web Project: Open Source and Web Monetization Docs" />
       <meta name="og:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
       <meta name="apple-mobile-web-app-title" content="Prototypr" />
       <link
@@ -66,5 +66,5 @@ export default {
   footer: true,
   footerEditLink: 'Edit this page on GitHub',
   footerText: <>MIT {new Date().getFullYear()} © Prototypr.</>,
-  unstable_faviconGlyph: '👋',
+  unstable_faviconGlyph: '🌐',
 }
