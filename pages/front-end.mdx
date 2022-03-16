@@ -1,8 +1,10 @@
-# Website
+# Building the Prototypr Website
+
+The Prototypr website is being rebuilt to prioritise **internationalisation**, **localisation** and **accessibility**. We're starting with a clean slate on a new next.js project, and this section documents each step of the building process.
 
 ![Screenshot of Prototypr.io homepage](/homepage.png)
 
-The website (or front-end) is the part of the app people will visit with a web browser. It's built with [NextJS](https://nextjs.org/), reading data from a [headless CMS backend: Strapi](./back-end). This section will show you how it was set up from the NextJS Starter boilerplate. 
+The website (or front-end) is the part of the app people will visit with a web browser. It's built with [NextJS](https://nextjs.org/), reading data from a [headless CMS backend: Strapi](./back-end). To begin, we start from a NextJS Starter boilerplate: 
 
 ## NextJS Boilerplate 
 
@@ -145,6 +147,17 @@ export default  `query Posts($where: PostFiltersInput) {
 ```
 
 Note: To make queries a bit easier to manage in the app, they've been separated out into their own files as shown above.
+
+## Pagination
+
+*Todo: add how we used next.js dynamic routing to create pagination - and why it's better than infinite scroll*
+
+*Todo: show how nested dynamic filters work*
+
+
+## Internationalisation
+
+*Todo: Show libraries used for internationalisation - how it enables localisation*
 
 ## Authentication
 
