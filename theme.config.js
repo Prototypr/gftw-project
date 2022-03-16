@@ -19,8 +19,8 @@ export default {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="monetization" content="$ilp.uphold.com/KFf2ZdYLXnj9"></meta>
-      <meta name="description" content="Prototypr team docs" />
-      <meta name="og:description" content="Prototypr team docs" />
+      <meta name="description" content="This is an open source, living documention on the development of the Prototypr Grant for The Web Project: 'Democratising Design Education with a Web Monetized Publishing Platform'." />
+      <meta name="og:description" content="This is an open source, living documention on the development of the Prototypr Grant for The Web Project:'Democratising Design Education with a Web Monetized Publishing Platform'." />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://prototyprio.gumlet.net/wp-content/uploads/2022/01/Twitter-post-179-1.png?format=webp&w=1242" />
       <meta name="twitter:site:domain" content="prototypr.io" />
