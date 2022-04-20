@@ -1,9 +1,10 @@
 {
   "index": "Introduction",
-  "web-monetization":"Web Monetization",
+  "web-monetization": "Web Monetization",
   "front-end": "Website",
   "back-end": "Content Management",
-  "publications":"Publications",
+  "i18n": "Localisation 🌐",
+  "publications": "Publications",
   "illustration": "Illustration",
-  "design":"Design"
+  "design": "Design"
 }
