@@ -210,11 +210,15 @@ This section will cover some steps and issues when deploying Strapi in developme
 2. Create a new App in DO App Platform, and choose the Prototypr backend from your GitHub Account as the source:
 ![Screenshot of digital ocean app platform, showing creation of new app with GitHub option](/app-platform-1.png)
 
-3. Set it up on the basic tier ($10 a month), with the following **12 Environmental variables**:
+3. Set it up on the basic tier ($10 a month), with the following in the Environmental variables section (taken from the `.env` file):
 
-![Screenshot of environmental variables in DO app platform. See below for text version](/I55J52rw.png)
 ```code
-NODE_ENV = production
+## STRAPI ADMIN
+## /config/admin.js
+ADMIN_JWT_SECRET=636386de7265035ac4fdb7b1b60ce917
+
+## DATABASE SETTINGS
+## /config/database.js
 DATABASE_HOST = ${db.HOSTNAME}
 DATABASE_NAME = ${db.DATABASE}
 DATABASE_PORT = ${db.PORT}
@@ -222,15 +226,35 @@ DATABASE_USERNAME = ${db.USERNAME}
 DATABASE_PASSWORD = ${db.PASSWORD}
 DATABASE_URL = ${db.DATABASE_URL}
 
+NODE_ENV = production
+
+## STANDARD STRAPI KEYS 
 APP_KEYS = <put your keys here>
 JWT_SECRET = <put your jwt here>
 API_TOKEN_SALT = <put your token here>
+
+## Additional for account creation
+ADMIN_TOKEN=<token from the strapi dashboard>
+STRAPI_URL=http://localhost:1337
+
+## MAILGUN PLUGIN KEYS FOR EMAIL NOTIFICATIONS
+MAILGUN_API_KEY=<mailgun api key>
+MAILGUN_DOMAIN=<mailgun domain>
+
+## 
+DO_SPACE_ACCESS_KEY=YTPUB6CFFT64SIYF7UIT
+DO_SPACE_SECRET_KEY=qpoFxFMiDm9tpJ7/DhA0PqK5JwJOQnP1ObJj63MStQc
+DO_SPACE_ENDPOINT=sfo2.digitaloceanspaces.com
+DO_SPACE_BUCKET=prototypr-media
+DO_SPACE_DIRECTORY=strapi
+DO_SPACE_CDN=
 
 NODE_TLS_REJECT_UNAUTHORIZED = 0
 ```
 
 **Notes on Env variables:** 
 * Wherever you se `db.` (e.g. `db.HOSTNAME`), db is your *database name* that you chose when creating the database.
+* The `ADMIN_TOKEN` comes from the strapi dashboard itself. When logged in as admin, create a new API token from the dashboard: `admin/settings/api-tokens`, and paste that in! It's used to for the backend to make requests that only admins are allowed to do.
 * `APP_KEYS`, `JWT_SECRET`, and `API_TOKEN_SALT` can be found in the `.env` file at the root of your Strapi project. If you don't have one because you cloned our repo (it's excluded from GitHub for security), it looks like this:
 ```code
 HOST=0.0.0.0
@@ -239,6 +263,8 @@ APP_KEYS=key1,key2,key3,key4
 JWT_SECRET=32characternumberhere
 API_TOKEN_SALT=32characternumberhere
 ```
+![Screenshot of environmental variables in DO app platform. See below for text version](/I55J52rw.png)
+
 These are created automatically with any new Strapi project, but if you are cloning the Prototypr repository, you may have to create your own:
 
 #### Creating Keys
