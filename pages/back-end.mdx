@@ -317,6 +317,20 @@ You can add a database at any point, but make sure the name corresponds to that 
 
 With that, you should be up and running. For more information, [check out this blog post](https://paper.dropbox.com/doc/Deploying-Strapi-NextJS-on-DigitalOcean-App-Platform-with-NextAuth--Bb8jA48QlVsg9lQtfKlAMn9mAQ-2UUo8KSEJc74B7ChThrYh), which has useful videos for deploying the backend.
 
+### Working with Digital Ocean databases
+
+For Prototypr, we have set up a development app, and a production app on the App platform.
+That's 2 separate apps, but the developement one is using sandbox resources so is around half the price.
+
+We needed to move data from production to development, here are those commands:
+
+- [Export an Existing Database](https://docs.digitalocean.com/products/databases/postgresql/how-to/import-databases/#export-an-existing-database)
+`pg_dump -h <your_host> -U <your_username> -p 25060 -Fc <your_database> > <path/to/your_dump_file.pgsql>`
+
+- [Import Database](https://docs.digitalocean.com/products/databases/postgresql/how-to/import-databases/#import-a-database)
+`pg_restore -d <your_connection_URI> --jobs 4 <path/to/your_dump_file.pgsql>`
+
+
 ## Authentication 
 
 For users to log in, we set up the social login providers in Strapi, and [log in from the Next.js front-end](next#authentication).
