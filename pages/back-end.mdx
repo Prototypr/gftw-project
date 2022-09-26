@@ -313,6 +313,19 @@ In addition to the above, you also need to make sure you have a database connect
 
 You can add a database at any point, but make sure the name corresponds to that used in your Environmental variables (see above re: `db.HOSTNAME`). 
 
+### Securing the database user
+
+The default user from this setup is called 'db'. In digital ocean app platform, you can add a new db user from the database management section:
+
+![2 Screenshots of Digitalocean dashboard, highlighting the database management url, and then where to add a database user](https://letter-so.s3.amazonaws.com/prototypr/Frame%201%20(45).png)
+
+After you add the user, you must grant them priveleges on your database.
+The Digital Ocean web interface doesn't have that option, instead you need to connect via a terminal using `psql`. There is a guide [here](https://docs.digitalocean.com/products/databases/postgresql/how-to/connect/).
+You'll notice the permissions in DigitalOcean's guide don't work. Instead, when adding permissions, use the commands in [this answer](https://stackoverflow.com/questions/22483555/postgresql-give-all-permissions-to-a-user-on-a-postgresql-database).
+
+If you've changed your database username, you'll also need to update it in your app settings:
+[Screenshot of app settings section in digital ocean](https://letter-so.s3.amazonaws.com/prototypr/Screenshot%202022-09-26%20at%2018.57.08.png)
+
 **Done**
 
 With that, you should be up and running. For more information, [check out this blog post](https://paper.dropbox.com/doc/Deploying-Strapi-NextJS-on-DigitalOcean-App-Platform-with-NextAuth--Bb8jA48QlVsg9lQtfKlAMn9mAQ-2UUo8KSEJc74B7ChThrYh), which has useful videos for deploying the backend.
